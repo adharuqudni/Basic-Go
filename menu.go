@@ -29,7 +29,7 @@ func main() {
 			fmt.Println("INPUT DATA")
 			fmt.Print("banyak data : ")
 			fmt.Scan(&jumlahData)
-			for i := k; i < jumlahData; i++ {
+			for i := 0; i < jumlahData; i++ {
 				fmt.Print("nama : ")
 				fmt.Scan(&nama[i])
 				fmt.Print("nim : ")
@@ -47,10 +47,17 @@ func main() {
 			}
 		}
 		if pilihan == 2 {
-			for i := 0; i < len(nama); i++ {
+			for i := 0; i < k; i++ {
 				fmt.Println("nama : ", nama[i])
 				fmt.Println("nim : ", nim[i])
 				fmt.Println("ipk : ", ipk[i])
+			}
+			fmt.Print("kembali? (y/n) : ")
+			fmt.Scan(&kembali)
+			if kembali == "y" {
+				iya = true
+			} else {
+				iya = false
 			}
 		}
 		if pilihan == 3 {
