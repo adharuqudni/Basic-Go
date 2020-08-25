@@ -41,9 +41,9 @@ func main() {
 			fmt.Print("kembali? (y/n) : ")
 			fmt.Scan(&kembali)
 			if kembali == "y" {
-				iya == true
+				iya = true
 			} else {
-				iya == false
+				iya = false
 			}
 		}
 		if pilihan == 2 {
